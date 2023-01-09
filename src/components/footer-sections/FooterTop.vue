@@ -113,7 +113,9 @@
                 </nav>
             </div>
 
-            <img src="../../assets/dc-logo-bg.png" alt="">
+            <div class="dc-bg-img">
+                <img src="../../assets/dc-logo-bg.png" alt="Dc Bg Logo">
+            </div>
         </div>
     </section>
 </template>
@@ -135,5 +137,19 @@ div.shop-nav {
 
 div.nav-info nav {
     padding: 0 1rem;
+}
+
+div.dc-bg-img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        height: 150%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
 }
 </style>
