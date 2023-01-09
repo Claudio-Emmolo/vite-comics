@@ -5,7 +5,7 @@
 <template>
     <header>
 
-        <div class="container-wrapped">
+        <div class="container-wrapped d-flex flex-between align-center">
             <img src="../assets/dc-logo.png" alt="DC Main Logo">
 
             <nav>
@@ -35,9 +35,6 @@
 <style lang="scss" scoped>
 header {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: .5rem;
 }
 
@@ -46,7 +43,8 @@ img {
 }
 
 nav ul li {
-    display: inline;
+    height: 100%;
+    display: inline-block;
     padding: 0 1rem;
 }
 </style>
