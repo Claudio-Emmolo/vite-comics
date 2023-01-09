@@ -1,5 +1,62 @@
 <script>
-
+export default {
+    data() {
+        return {
+            navItems: [
+                {
+                    text: 'characters',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'comics',
+                    url: '#',
+                    active: true
+                },
+                {
+                    text: 'movies',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'tv',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'games',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'collectibles',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'videos',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'fans',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'news',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'shop',
+                    url: '#',
+                    active: false
+                },
+            ]
+        }
+    }
+}
 </script>
 
 <template>
@@ -10,20 +67,8 @@
 
             <nav>
                 <ul>
-                    <li>
-                        <a href="#">Item</a>
-                    </li>
-                    <li>
-                        <a href="#">Item</a>
-                    </li>
-                    <li>
-                        <a href="#">Item</a>
-                    </li>
-                    <li>
-                        <a href="#">Item</a>
-                    </li>
-                    <li>
-                        <a href="#">Item</a>
+                    <li v-for="item in navItems" class="active">
+                        <a :href="item.url">{{ item.text }}</a>
                     </li>
                 </ul>
             </nav>
@@ -46,5 +91,19 @@ nav ul li {
     height: 100%;
     display: inline-block;
     padding: 0 1rem;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .9rem;
+        color: black;
+    }
+
+}
+
+.active a {
+    color: blue;
+    border-bottom: 3px solid blue;
 }
 </style>
