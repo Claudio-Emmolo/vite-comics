@@ -1,24 +1,28 @@
-<script setup>
+<script>
+import AppHeader from './components/AppHeader.vue';
+
+export default {
+  components: {
+    AppHeader,
+  }
+}
 </script>
+
+
 
 <template>
   <div class="container-wrapped">
-    <header>
-      <!-- Import Header -->
+    <!-- Import Header -->
+    <AppHeader />
 
-    </header>
 
-    <main>
-      <!-- Import Main -->
+    <!-- Import Main -->
 
-    </main>
-
-    <footer>
-      <!-- Import Footer -->
-    </footer>
 
   </div>
 </template>
+
+
 
 <style lang="scss">
 @use './styles/general.scss' as *;
