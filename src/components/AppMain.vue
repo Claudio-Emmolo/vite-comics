@@ -1,23 +1,29 @@
 <script>
+import MainService from './AppMainService.vue'
+
+export default {
+    components: {
+        MainService
+    }
+}
 </script>
 
 <template>
     <main>
-        <div class="container-wrapped">
 
-            <section id="jumbotron">
+        <section id="jumbotron">
+            <div class="container-wrapped">
                 <h2> __> Content Here {{ '<__' }} </h2>
-            </section>
-            <section id="service">
-                <!-- BONUS -->
-            </section>
-        </div>
+            </div>
+        </section>
+        <!-- Import service section -->
+        <MainService />
     </main>
 </template>
 
 
 <style lang="scss" scoped>
-main {
+section#jumbotron {
     background-color: black;
     color: white;
     padding: 2rem;
