@@ -33,12 +33,11 @@ export default {
 
 <style lang="scss">
 @use './styles/general.scss' as *;
-@use './styles/variables.scss' as *;
+@use './styles/partials/variables.scss' as *;
 
 
 div.container-wrapped {
   width: 80%;
-  border: 1px solid red;
   margin: 0 auto;
 }
 

@@ -1,5 +1,62 @@
 <script>
-
+export default {
+    data() {
+        return {
+            navItems: [
+                {
+                    text: 'Characters',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'Comics',
+                    url: '#',
+                    active: true
+                },
+                {
+                    text: 'Movies',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'Tv',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'Games',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'Collectibles',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'Videos',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'Fans',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'News',
+                    url: '#',
+                    active: false
+                },
+                {
+                    text: 'Shop',
+                    url: '#',
+                    active: false
+                },
+            ]
+        }
+    }
+}
 </script>
 
 <template>
@@ -13,25 +70,25 @@
                             <h2>DC Comics</h2>
                             <ul>
                                 <li>
-                                    <a href="#">Item</a>
+                                    <a href="#">Characters</a>
                                 </li>
                                 <li>
-                                    <a href="#">Item</a>
+                                    <a href="#">Comics</a>
                                 </li>
                                 <li>
-                                    <a href="#">Item</a>
+                                    <a href="#">Movies</a>
                                 </li>
                                 <li>
-                                    <a href="#">Item</a>
+                                    <a href="#">TV</a>
                                 </li>
                                 <li>
-                                    <a href="#">Item</a>
+                                    <a href="#">Games</a>
                                 </li>
                                 <li>
-                                    <a href="#">Item</a>
+                                    <a href="#">Videos</a>
                                 </li>
                                 <li>
-                                    <a href="#">Item</a>
+                                    <a href="#">News</a>
                                 </li>
                             </ul>
                         </div>
@@ -40,14 +97,12 @@
                             <h2>Shop</h2>
                             <ul>
                                 <li>
-                                    <a href="#">Item</a>
+                                    <a href="#">Shop DC</a>
                                 </li>
                                 <li>
-                                    <a href="#">Item</a>
+                                    <a href="#">Shop DC Collectibles</a>
                                 </li>
-                                <li>
-                                    <a href="#">Item</a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -56,37 +111,37 @@
                         <h2>DC</h2>
                         <ul>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Term Of Use</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Privacy policy (New)</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Ad Choices</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Advertising</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Jobs</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Subscriptions</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Talent Workshop</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">CPSC Certificates</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Rating</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Shop Help</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">Contact US</a>
                             </li>
                         </ul>
                     </div>
@@ -95,19 +150,19 @@
                         <h2>Sites</h2>
                         <ul>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">DC</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">MAD Magazine</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">DC Kids</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">DC Universe</a>
                             </li>
                             <li>
-                                <a href="#">Item</a>
+                                <a href="#">DC Power Visa</a>
                             </li>
                         </ul>
                     </div>
@@ -124,22 +179,44 @@
 
 <style lang="scss" scoped>
 section#top-footer {
-    padding: 1rem;
-    background-color: rgb(102, 89, 89);
+    background-image: url(../../assets/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-h2 {
-    margin-bottom: .5rem;
+div.nav-info {
+    padding: 2rem 0;
 }
 
 div.single-nav {
-    margin: 0 1rem;
+    margin-right: 2rem;
     width: max-content;
 
     h2 {
-        font-size: 1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
         margin-bottom: .5rem;
+        color: white;
+        text-transform: uppercase;
     }
+
+    ul li {
+        list-style-type: none;
+        margin: .15rem 0;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 300;
+            font-size: .8rem;
+            filter: opacity(.6);
+
+            &:hover {
+                filter: opacity(1);
+            }
+        }
+    }
+
 }
 
 div.shop-nav {

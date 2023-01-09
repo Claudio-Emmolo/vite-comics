@@ -67,7 +67,7 @@ export default {
 
             <nav>
                 <ul>
-                    <li v-for="item in navItems" class="active">
+                    <li v-for="item in navItems" :class="(item.active) ? 'active' : ''">
                         <a :href="item.url">{{ item.text }}</a>
                     </li>
                 </ul>
@@ -82,11 +82,11 @@ export default {
 
 header {
     width: 100%;
-    padding: .5rem;
+    padding: 1rem 0;
 }
 
 img {
-    height: 80%;
+    height: 75%;
 }
 
 nav {
@@ -116,5 +116,6 @@ ul {
 
 .active a {
     color: $nav-active-txt;
+    border-bottom: 5px solid $nav-active-txt;
 }
 </style>
