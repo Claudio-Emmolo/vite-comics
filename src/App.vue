@@ -23,6 +23,7 @@ export default {
   <!-- Import Main -->
   <AppMain />
 
+
   <!-- Import Footer -->
   <AppFooter />
 

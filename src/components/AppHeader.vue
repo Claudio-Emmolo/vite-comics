@@ -62,12 +62,12 @@ export default {
 <template>
     <header>
 
-        <div class="container-wrapped d-flex flex-between align-center">
+        <div class="container-wrapped d-flex flex-between">
             <img src="../assets/dc-logo.png" alt="DC Main Logo">
 
             <nav>
                 <ul>
-                    <li v-for="item in navItems" :class="(item.active) ? 'active' : ''">
+                    <li v-for="item in navItems" :class="(item.active) ? 'active' : ''" class="d-flex align-center">
                         <a :href="item.url">{{ item.text }}</a>
                     </li>
                 </ul>
@@ -82,23 +82,28 @@ export default {
 
 header {
     width: 100%;
-    padding: 1rem 0;
+
+    div.container-wrapped {
+        align-items: stretch;
+    }
 }
 
 img {
-    height: 75%;
+    height: 70%;
+    padding: 1rem 0;
 }
 
 
 nav ul {
     display: flex;
-    align-items: stretch;
-
+    height: 100%;
+    padding-top: 1rem;
 
     li {
         list-style-type: none;
         height: 100%;
-        padding: 0 1rem;
+        margin: 0 1rem;
+        border-bottom: 7px solid transparent;
 
         a {
             text-decoration: none;
@@ -114,10 +119,13 @@ nav ul {
 
     }
 
+    li.active {
+        border-bottom: 7px solid $brand-color;
+    }
+
     .active a {
-        padding-bottom: 3.33rem;
+        // padding-bottom: 3.33rem;
         color: $brand-color;
-        border-bottom: 5px solid $brand-color;
     }
 }
 </style>
