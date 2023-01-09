@@ -2,56 +2,116 @@
 export default {
     data() {
         return {
-            navItems: [
+            // Create OBJ Array with nav items
+            docComicsItems: [
                 {
                     text: 'Characters',
-                    url: '#',
-                    active: false
+                    url: '#'
                 },
                 {
                     text: 'Comics',
-                    url: '#',
-                    active: true
+                    url: '#'
                 },
                 {
                     text: 'Movies',
-                    url: '#',
-                    active: false
+                    url: '#'
                 },
                 {
-                    text: 'Tv',
-                    url: '#',
-                    active: false
+                    text: 'TV',
+                    url: '#'
                 },
                 {
                     text: 'Games',
-                    url: '#',
-                    active: false
-                },
-                {
-                    text: 'Collectibles',
-                    url: '#',
-                    active: false
+                    url: '#'
                 },
                 {
                     text: 'Videos',
-                    url: '#',
-                    active: false
-                },
-                {
-                    text: 'Fans',
-                    url: '#',
-                    active: false
+                    url: '#'
                 },
                 {
                     text: 'News',
-                    url: '#',
-                    active: false
+                    url: '#'
+                },
+            ],
+
+            shopItems: [
+                {
+                    text: 'Shop DC',
+                    url: '#'
                 },
                 {
-                    text: 'Shop',
-                    url: '#',
-                    active: false
+                    text: 'Shop DC Collectibles',
+                    url: '#'
+                },
+            ],
+
+            DCItems: [
+                {
+                    text: 'Term Of Use',
+                    url: '#'
+                },
+                {
+                    text: 'Privacy policy (New)',
+                    url: '#'
+                },
+                {
+                    text: 'Ad Choices',
+                    url: '#'
+                },
+                {
+                    text: 'Advertising',
+                    url: '#'
+                },
+                {
+                    text: 'Jobs',
+                    url: '#'
+                },
+                {
+                    text: 'Subscriptions',
+                    url: '#'
+                },
+                {
+                    text: 'Talent Workshop',
+                    url: '#'
+                },
+                {
+                    text: 'CPSC Certificates',
+                    url: '#'
+                },
+                {
+                    text: 'Rating',
+                    url: '#'
+                },
+                {
+                    text: 'Shop Help',
+                    url: '#'
+                },
+                {
+                    text: 'Contact US',
+                    url: '#'
+                },
+            ],
+
+            siteItems: [
+                {
+                    text: 'DC',
+                    url: '#'
+                },
+                {
+                    text: 'MAD Magazine',
+                    url: '#'
+                },
+                {
+                    text: 'DC Kids',
+                    url: '#'
+                },
+                {
+                    text: 'DC Universe',
+                    url: '#'
+                },
+                {
+                    text: 'DC Power Visa',
+                    url: '#'
                 },
             ]
         }
@@ -69,26 +129,8 @@ export default {
                         <div class="single-nav">
                             <h2>DC Comics</h2>
                             <ul>
-                                <li>
-                                    <a href="#">Characters</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Movies</a>
-                                </li>
-                                <li>
-                                    <a href="#">TV</a>
-                                </li>
-                                <li>
-                                    <a href="#">Games</a>
-                                </li>
-                                <li>
-                                    <a href="#">Videos</a>
-                                </li>
-                                <li>
-                                    <a href="#">News</a>
+                                <li v-for="item in docComicsItems">
+                                    <a :href="item.url">{{ item.text }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -96,13 +138,9 @@ export default {
                         <div class="single-nav shop-nav">
                             <h2>Shop</h2>
                             <ul>
-                                <li>
-                                    <a href="#">Shop DC</a>
+                                <li v-for="item in shopItems">
+                                    <a :href="item.url">{{ item.text }}</a>
                                 </li>
-                                <li>
-                                    <a href="#">Shop DC Collectibles</a>
-                                </li>
-
                             </ul>
                         </div>
                     </div>
@@ -110,59 +148,18 @@ export default {
                     <div class="single-nav">
                         <h2>DC</h2>
                         <ul>
-                            <li>
-                                <a href="#">Term Of Use</a>
+                            <li v-for="item in DCItems">
+                                <a :href="item.url">{{ item.text }}</a>
                             </li>
-                            <li>
-                                <a href="#">Privacy policy (New)</a>
-                            </li>
-                            <li>
-                                <a href="#">Ad Choices</a>
-                            </li>
-                            <li>
-                                <a href="#">Advertising</a>
-                            </li>
-                            <li>
-                                <a href="#">Jobs</a>
-                            </li>
-                            <li>
-                                <a href="#">Subscriptions</a>
-                            </li>
-                            <li>
-                                <a href="#">Talent Workshop</a>
-                            </li>
-                            <li>
-                                <a href="#">CPSC Certificates</a>
-                            </li>
-                            <li>
-                                <a href="#">Rating</a>
-                            </li>
-                            <li>
-                                <a href="#">Shop Help</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact US</a>
-                            </li>
+
                         </ul>
                     </div>
 
                     <div class="single-nav">
                         <h2>Sites</h2>
                         <ul>
-                            <li>
-                                <a href="#">DC</a>
-                            </li>
-                            <li>
-                                <a href="#">MAD Magazine</a>
-                            </li>
-                            <li>
-                                <a href="#">DC Kids</a>
-                            </li>
-                            <li>
-                                <a href="#">DC Universe</a>
-                            </li>
-                            <li>
-                                <a href="#">DC Power Visa</a>
+                            <li v-for="item in siteItems">
+                                <a :href="item.url">{{ item.text }}</a>
                             </li>
                         </ul>
                     </div>
