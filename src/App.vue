@@ -47,4 +47,8 @@ div.container-wrapped {
 .flex-between {
   justify-content: space-between;
 }
+
+.align-center {
+  align-items: center;
+}
 </style>

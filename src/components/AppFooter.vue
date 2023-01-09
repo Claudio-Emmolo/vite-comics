@@ -1,9 +1,12 @@
 <script>
 import FooterTop from '../components/footer-sections/FooterTop.vue'
+import FooterBottom from '../components/footer-sections/FooterBottom.vue'
+
 
 export default {
     components: {
-        FooterTop
+        FooterTop,
+        FooterBottom
     }
 }
 </script>
@@ -12,6 +15,8 @@ export default {
     <footer>
         <!-- Import Top Footer Section -->
         <FooterTop />
+        <FooterBottom />
+
     </footer>
 </template>
 
