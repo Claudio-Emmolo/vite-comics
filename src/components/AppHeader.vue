@@ -89,13 +89,11 @@ img {
     height: 75%;
 }
 
-nav {
-    height: 100%;
-}
 
-ul {
+nav ul {
     display: flex;
-    height: 100%;
+    align-items: stretch;
+
 
     li {
         list-style-type: none;
@@ -108,14 +106,18 @@ ul {
             font-weight: 700;
             font-size: .9rem;
             color: black;
+
+            &:hover {
+                color: $brand-color;
+            }
         }
 
     }
 
-}
-
-.active a {
-    color: $nav-active-txt;
-    border-bottom: 5px solid $nav-active-txt;
+    .active a {
+        padding-bottom: 3.33rem;
+        color: $brand-color;
+        border-bottom: 5px solid $brand-color;
+    }
 }
 </style>

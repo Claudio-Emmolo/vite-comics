@@ -6,7 +6,7 @@
         <div class="container-wrapped">
 
             <section id="jumbotron">
-                <h2> __> Content Here </h2>
+                <h2> __> Content Here {{ '<__' }} </h2>
             </section>
             <section id="service">
                 <!-- BONUS -->
