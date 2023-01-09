@@ -89,7 +89,7 @@ header {
 }
 
 img {
-    height: 70%;
+    height: 120px;
     padding: 1rem 0;
 }
 
@@ -109,7 +109,7 @@ nav ul {
             text-decoration: none;
             text-transform: uppercase;
             font-weight: 700;
-            font-size: .9rem;
+            font-size: .8rem;
             color: black;
 
             &:hover {
