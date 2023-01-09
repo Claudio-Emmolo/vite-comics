@@ -7,36 +7,78 @@
         <div class="container-wrapped d-flex flex-between">
             <div class="nav-info d-flex">
 
-                <!-- DC Comics and Shop NAV -->
-                <nav>
-                    <h2>DC Comics</h2>
-                    <ul>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                    </ul>
+                <nav class="d-flex">
+                    <div class="nav-wrap">
+                        <div class="single-nav">
+                            <h2>DC Comics</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="shop-nav">
-                        <h2>Shop</h2>
+                        <div class="single-nav shop-nav">
+                            <h2>Shop</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="single-nav">
+                        <h2>DC</h2>
                         <ul>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
                             <li>
                                 <a href="#">Item</a>
                             </li>
@@ -48,68 +90,27 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
 
-                <!-- DC Nav -->
-                <nav>
-                    <h2>DC</h2>
-                    <ul>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <!-- Sites Nav -->
-                <nav>
-                    <h2>Sites</h2>
-                    <ul>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                        <li>
-                            <a href="#">Item</a>
-                        </li>
-                    </ul>
+                    <div class="single-nav">
+                        <h2>Sites</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
 
@@ -129,6 +130,16 @@ section#top-footer {
 
 h2 {
     margin-bottom: .5rem;
+}
+
+div.single-nav {
+    margin: 0 1rem;
+    width: max-content;
+
+    h2 {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
 }
 
 div.shop-nav {
