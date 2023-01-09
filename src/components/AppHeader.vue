@@ -7,32 +7,34 @@ export default {
 <template>
     <header>
 
-        <img src="../assets/dc-logo.png" alt="DC Main Logo">
+        <div class="container-wrapped">
+            <img src="../assets/dc-logo.png" alt="DC Main Logo">
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
     width: 100%;
     display: flex;
