@@ -78,6 +78,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as *;
+
 header {
     width: 100%;
     padding: .5rem;
@@ -87,23 +89,32 @@ img {
     height: 80%;
 }
 
-nav ul li {
+nav {
     height: 100%;
-    display: inline-block;
-    padding: 0 1rem;
+}
 
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: .9rem;
-        color: black;
+ul {
+    display: flex;
+    height: 100%;
+
+    li {
+        list-style-type: none;
+        height: 100%;
+        padding: 0 1rem;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: .9rem;
+            color: black;
+        }
+
     }
 
 }
 
 .active a {
-    color: blue;
-    border-bottom: 3px solid blue;
+    color: $nav-active-txt;
 }
 </style>

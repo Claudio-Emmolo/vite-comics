@@ -33,6 +33,8 @@ export default {
 
 <style lang="scss">
 @use './styles/general.scss' as *;
+@use './styles/variables.scss' as *;
+
 
 div.container-wrapped {
   width: 80%;
