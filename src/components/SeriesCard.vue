@@ -28,10 +28,12 @@ export default {
 article {
     width: calc((100% / 6) - 1rem);
     margin: 1rem .5rem;
+    overflow: hidden;
+
 
     div.thum-container {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
         overflow: hidden;
         margin-bottom: 1.2rem;
         position: relative;
