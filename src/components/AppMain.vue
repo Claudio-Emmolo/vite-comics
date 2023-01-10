@@ -1,11 +1,12 @@
 <script>
-import MainService from './AppMainService.vue'
+import MainService from './AppMainService.vue';
+import SeriesCard from './SeriesCard.vue';
+
 
 export default {
-    name: AppMain,
-
     components: {
-        MainService
+        MainService,
+        SeriesCard
     },
 
     data() {
@@ -91,16 +92,20 @@ export default {
 
 <template>
     <main>
-
+        <!-- JuboTron section -->
         <section id="jumbotron">
             <!-- <div class="container-wrapped">
                 <h2> __> Content Here {{ '<__' }} </h2>
             </div> -->
         </section>
-        <section id="current-series">
 
+        <!-- Current Series section -->
+        <section id="current-series">
+            <SeriesCard v-for="serie in serieList" :srThumb="serie.thumb" :srPrice="serie.price"
+                :srSeries="serie.series" :srType="serie.type" />
         </section>
-        <!-- Import service section -->
+
+        <!-- *Import* Service section -->
         <MainService />
     </main>
 </template>
