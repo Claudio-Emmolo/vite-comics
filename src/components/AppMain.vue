@@ -12,9 +12,9 @@ export default {
     <main>
 
         <section id="jumbotron">
-            <div class="container-wrapped">
+            <!-- <div class="container-wrapped">
                 <h2> __> Content Here {{ '<__' }} </h2>
-            </div>
+            </div> -->
         </section>
         <!-- Import service section -->
         <MainService />
@@ -24,7 +24,8 @@ export default {
 
 <style lang="scss" scoped>
 section#jumbotron {
-    background-color: black;
+    background-image: url(../assets/jumbotron.jpg);
+    height: 400px;
     color: white;
     padding: 2rem;
 }
