@@ -43,14 +43,14 @@ section#bottom-footer {
 a.btn {
     font-size: 1.2rem;
     text-decoration: none;
-    color: white;
+    color: $white;
     text-transform: uppercase;
     padding: 1rem 2rem;
     border: 2px solid $brand-color;
 
     &:hover {
         color: $brand-color;
-        background-color: white;
+        background-color: $white;
     }
 }
 

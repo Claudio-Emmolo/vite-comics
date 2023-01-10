@@ -28,6 +28,7 @@ export default {
     },
 
     methods: {
+        //Find img on directory
         getImagePath: function (imgPath) {
             return new URL(imgPath, import.meta.url).href;
         }
@@ -40,7 +41,7 @@ export default {
         <div class="service-cards d-flex container-wrapped">
 
             <div v-for="serviceItem in serviceList" class="single-card d-flex align-center">
-                <img :src="getImagePath(`../assets/${serviceItem.imgUrl}`)" alt="Digital Comics">
+                <img :src="getImagePath(`../assets/${serviceItem.imgUrl}`)" :alt="serviceItem.text">
                 <h2>{{ serviceItem.text }}</h2>
             </div>
 
@@ -72,7 +73,7 @@ div.single-card {
 
     h2 {
         font-size: 1rem;
-        color: white;
+        color: $white;
         text-transform: uppercase;
         font-weight: 300;
     }

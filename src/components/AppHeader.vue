@@ -82,6 +82,7 @@ export default {
 
 header {
     width: 100%;
+    background-color: $white;
 
     div.container-wrapped {
         align-items: stretch;

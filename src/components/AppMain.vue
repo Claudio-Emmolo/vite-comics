@@ -126,13 +126,13 @@ section#jumbotron {
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    color: white;
+    color: $white;
     padding: 2rem;
 }
 
 section#current-series {
     background-color: $series-bg;
-    color: white;
+    color: $white;
 
     div.card-rows {
         padding: 2rem 0;
@@ -148,13 +148,13 @@ div.card-rows {
         margin-top: 1rem;
         font-size: 1rem;
         text-decoration: none;
-        color: white;
+        color: $white;
         text-transform: uppercase;
         padding: .5rem 3rem;
         background-color: $brand-color;
 
         &:hover {
-            background-color: white;
+            background-color: $white;
             color: $brand-color ;
         }
     }
@@ -165,7 +165,7 @@ div.title-series-section {
     top: 0;
     transform: translateY(-55%);
     background-color: $brand-color;
-    color: white;
+    color: $white;
     padding: .8rem 1.5rem;
 
     h2 {

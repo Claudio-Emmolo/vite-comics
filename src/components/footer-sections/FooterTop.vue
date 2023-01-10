@@ -175,6 +175,8 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../../styles/partials/variables' as *;
+
 section#top-footer {
     background-image: url(../../assets/footer-bg.jpg);
     background-size: cover;
@@ -193,7 +195,7 @@ div.single-nav {
         font-weight: bold;
         font-size: 1.5rem;
         margin-bottom: .5rem;
-        color: white;
+        color: $white;
         text-transform: uppercase;
     }
 
@@ -203,7 +205,7 @@ div.single-nav {
 
         a {
             text-decoration: none;
-            color: white;
+            color: $white;
             font-weight: 300;
             font-size: .8rem;
             filter: opacity(.6);
