@@ -102,8 +102,13 @@ export default {
         <!-- Current Series section -->
         <section id="current-series">
             <div class="card-rows container-wrapped d-flex">
+                <div class="title-series-section">
+                    <h2>Current Series</h2>
+                </div>
                 <SeriesCard v-for="serie in serieList" :srThumb="serie.thumb" :srPrice="serie.price"
                     :srSeries="serie.series" :srType="serie.type" />
+
+                <a href="#" class="btn-blue">Load More</a>
             </div>
         </section>
 
@@ -130,7 +135,43 @@ section#current-series {
     color: white;
 
     div.card-rows {
+        padding: 2rem 0;
         flex-wrap: wrap;
     }
+}
+
+div.card-rows {
+    position: relative;
+
+    a.btn-blue {
+        margin: auto;
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        padding: .5rem 3rem;
+        background-color: $brand-color;
+
+        &:hover {
+            background-color: white;
+            color: $brand-color ;
+        }
+    }
+}
+
+div.title-series-section {
+    position: absolute;
+    top: 0;
+    transform: translateY(-55%);
+    background-color: $brand-color;
+    color: white;
+    padding: .8rem 1.5rem;
+
+    h2 {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
 }
 </style>

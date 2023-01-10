@@ -38,7 +38,7 @@ export default {
 
 
 div.container-wrapped {
-  max-width: 1767px;
+  max-width: 1380px;
   min-width: 1330px;
   margin: 0 auto;
 }
