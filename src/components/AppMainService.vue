@@ -1,29 +1,49 @@
 <script>
+export default {
+    data() {
+        return {
+            serviceList: [
+                {
+                    imgUrl: 'buy-comics-digital-comics.png',
+                    text: 'Digital Comics'
+                },
+                {
+                    imgUrl: 'buy-comics-merchandise.png',
+                    text: 'DC Merchandise'
+                },
+                {
+                    imgUrl: 'buy-comics-subscriptions.png',
+                    text: 'Subscription'
+                },
+                {
+                    imgUrl: 'buy-comics-shop-locator.png',
+                    text: 'Comic Shop Locator'
+                },
+                {
+                    imgUrl: 'buy-dc-power-visa.svg',
+                    text: 'DC Power Visa'
+                },
+            ]
+        }
+    },
+
+    methods: {
+        getImagePath: function (imgPath) {
+            return new URL(imgPath, import.meta.url).href;
+        }
+    }
+}
 </script>
 
 <template>
     <section id="service">
         <div class="service-cards d-flex container-wrapped">
-            <div class="single-card d-flex align-center">
-                <img src="../assets/buy-comics-digital-comics.png" alt="Digital Comics">
-                <h2>Digital Comics</h2>
+
+            <div v-for="serviceItem in serviceList" class="single-card d-flex align-center">
+                <img :src="getImagePath(`../assets/${serviceItem.imgUrl}`)" alt="Digital Comics">
+                <h2>{{ serviceItem.text }}</h2>
             </div>
-            <div class="single-card d-flex align-center">
-                <img src="../assets/buy-comics-merchandise.png" alt="DC Merchandise">
-                <h2>DC Merchandise</h2>
-            </div>
-            <div class="single-card d-flex align-center">
-                <img src="../assets/buy-comics-subscriptions.png" alt="Subscription">
-                <h2>Subscription</h2>
-            </div>
-            <div class="single-card d-flex align-center">
-                <img src="../assets/buy-comics-shop-locator.png" alt="Shop Locator">
-                <h2>Comic Shop Locator</h2>
-            </div>
-            <div class="single-card d-flex align-center">
-                <img src="../assets/buy-dc-power-visa.svg" alt="DC Power Visa">
-                <h2>DC Power Visa</h2>
-            </div>
+
         </div>
     </section>
 </template>
