@@ -1,8 +1,9 @@
 <script>
 export default {
+    name: 'AppMainService',
     data() {
         return {
-            serviceList: [
+            serviceList: [ // Service Items
                 {
                     imgUrl: 'buy-comics-digital-comics.png',
                     text: 'Digital Comics'
@@ -28,7 +29,7 @@ export default {
     },
 
     methods: {
-        //Find img on directory
+        //Find img on directory (Absolute path)
         getImagePath: function (imgPath) {
             return new URL(imgPath, import.meta.url).href;
         }
@@ -61,8 +62,6 @@ div.single-card {
     width: calc((100% / 5) - 1rem);
     padding: 0 .5rem;
     justify-content: center;
-
-
 
     img {
         width: 55px;

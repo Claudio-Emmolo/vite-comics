@@ -1,7 +1,9 @@
 <script>
 export default {
+    name: 'AppHeader',
     data() {
         return {
+            // NavBar Items
             navItems: [
                 {
                     text: 'characters',

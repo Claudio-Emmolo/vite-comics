@@ -1,8 +1,9 @@
 <script>
 export default {
+    name: 'FooterTop',
     data() {
         return {
-            // Create OBJ Array with nav items
+            // Arrays OBj for footer nav
             docComicsItems: [
                 {
                     text: 'Characters',
@@ -128,6 +129,7 @@ export default {
                     <div class="nav-wrap">
                         <div class="single-nav">
                             <h2>DC Comics</h2>
+                            <!-- Generate Nav for DC Comics  -->
                             <ul>
                                 <li v-for="item in docComicsItems">
                                     <a :href="item.url">{{ item.text }}</a>
@@ -137,6 +139,8 @@ export default {
 
                         <div class="single-nav shop-nav">
                             <h2>Shop</h2>
+                            <!-- Generate Nav for Shop  -->
+
                             <ul>
                                 <li v-for="item in shopItems">
                                     <a :href="item.url">{{ item.text }}</a>
@@ -147,6 +151,8 @@ export default {
 
                     <div class="single-nav">
                         <h2>DC</h2>
+                        <!-- Generate Nav for DC  -->
+
                         <ul>
                             <li v-for="item in DCItems">
                                 <a :href="item.url">{{ item.text }}</a>
@@ -157,6 +163,7 @@ export default {
 
                     <div class="single-nav">
                         <h2>Sites</h2>
+                        <!-- Generate Nav for Sistes  -->
                         <ul>
                             <li v-for="item in siteItems">
                                 <a :href="item.url">{{ item.text }}</a>
@@ -166,6 +173,7 @@ export default {
                 </nav>
             </div>
 
+            <!-- DC Trasparent Logo  -->
             <div class="dc-bg-img">
                 <img src="../../assets/dc-logo-bg.png" alt="Dc Bg Logo">
             </div>

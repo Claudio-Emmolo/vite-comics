@@ -4,6 +4,7 @@ import FooterBottom from '../components/footer-sections/FooterBottom.vue'
 
 
 export default {
+    name: 'AppFooter',
     components: {
         FooterTop,
         FooterBottom
@@ -15,6 +16,8 @@ export default {
     <footer>
         <!-- Import Top Footer Section -->
         <FooterTop />
+
+        <!-- Import Bottom Footer Section -->
         <FooterBottom />
 
     </footer>

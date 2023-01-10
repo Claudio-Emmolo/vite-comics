@@ -6,6 +6,8 @@ import AppFooter from './components/AppFooter.vue';
 
 
 export default {
+  name: 'App',
+
   components: {
     AppHeader,
     AppMain,
@@ -37,6 +39,7 @@ export default {
 @use './styles/partials/variables.scss' as *;
 
 
+// General 
 div.container-wrapped {
   max-width: 1380px;
   min-width: 1330px;

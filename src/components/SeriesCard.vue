@@ -1,5 +1,7 @@
 <script>
 export default {
+    name: 'SeriesCard',
+    // Import Props
     props: [
         'srThumb', 'srPrice', 'srSeries', 'srType'
     ]

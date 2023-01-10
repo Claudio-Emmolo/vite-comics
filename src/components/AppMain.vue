@@ -4,6 +4,7 @@ import SeriesCard from './SeriesCard.vue';
 
 
 export default {
+    name: 'AppMain',
     components: {
         MainService,
         SeriesCard
@@ -11,7 +12,7 @@ export default {
 
     data() {
         return {
-            serieList: [
+            serieList: [ // Comic Items
                 {
                     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
                     "price": "$19.99",
@@ -94,9 +95,7 @@ export default {
     <main>
         <!-- JuboTron section -->
         <section id="jumbotron">
-            <!-- <div class="container-wrapped">
-                <h2> __> Content Here {{ '<__' }} </h2>
-            </div> -->
+            <!-- Bg Cartoon-->
         </section>
 
         <!-- Current Series section -->
@@ -105,6 +104,8 @@ export default {
                 <div class="title-series-section">
                     <h2>Current Series</h2>
                 </div>
+
+                <!-- Props of Comic Items -->
                 <SeriesCard v-for="serie in serieList" :srThumb="serie.thumb" :srPrice="serie.price"
                     :srSeries="serie.series" :srType="serie.type" />
 
