@@ -101,8 +101,10 @@ export default {
 
         <!-- Current Series section -->
         <section id="current-series">
-            <SeriesCard v-for="serie in serieList" :srThumb="serie.thumb" :srPrice="serie.price"
-                :srSeries="serie.series" :srType="serie.type" />
+            <div class="card-rows container-wrapped d-flex">
+                <SeriesCard v-for="serie in serieList" :srThumb="serie.thumb" :srPrice="serie.price"
+                    :srSeries="serie.series" :srType="serie.type" />
+            </div>
         </section>
 
         <!-- *Import* Service section -->
@@ -112,10 +114,21 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 section#jumbotron {
     background-image: url(../assets/jumbotron.jpg);
     height: 400px;
     color: white;
     padding: 2rem;
+}
+
+section#current-series {
+    background-color: $series-bg;
+    color: white;
+
+    div.card-rows {
+        flex-wrap: wrap;
+    }
 }
 </style>
