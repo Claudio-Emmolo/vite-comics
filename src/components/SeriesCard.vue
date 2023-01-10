@@ -12,7 +12,7 @@ export default {
             <div class="hover-thumb d-flex">
                 <div class="hover-content">
                     <span>{{ srPrice }}</span>
-                    <span>{{ srType }} </span>
+                    <span class="type-card">{{ srType }} </span>
                 </div>
             </div>
             <img :src="srThumb" :alt="srSeries">
@@ -23,6 +23,8 @@ export default {
 
 
 <style lang="scss">
+@use '../styles/partials/variables' as *;
+
 article {
     width: calc((100% / 6) - 1rem);
     margin: 1rem .5rem;
@@ -44,7 +46,8 @@ article {
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.664);
+            background-color: rgba(0, 0, 0, 0.719);
+            cursor: pointer;
             display: none;
 
             div.hover-content {
@@ -55,6 +58,12 @@ article {
                     display: block;
                     text-transform: uppercase;
                     margin: .5rem 0;
+
+                }
+
+                .type-card {
+                    color: $brand-color;
+                    font-weight: 700;
                 }
             }
 

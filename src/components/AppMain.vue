@@ -118,6 +118,8 @@ export default {
 
 section#jumbotron {
     background-image: url(../assets/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 400px;
     color: white;
     padding: 2rem;
